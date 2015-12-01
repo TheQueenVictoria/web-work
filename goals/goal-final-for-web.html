@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <base target="_top">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="template" content="LANDING_BASE">
+        
+        <title>Foolmalers Goal Track</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        
+        <!-- fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    color:#3A5968;
+        }
+
+.content {
+    max-width:80%;
+    text-align:center;
+    margin: 0 auto;
+    padding: 0px 0px 65px 0px;
+    color:#3A5968;
+    }
+.black-top {
+    color:#C3C3C3;
+    background-color:#000000;
+    margin-bottom: 50px;
+    }
+    
+.logo {
+    /*text-transform:uppercase;*/ /* style decisions */
+    text-align:left;
+    letter-spacing:1px;
+    color:#C3C3C3;
+    padding:20px;
+    float:left;
+    }    
+      
+.top-header {
+    background-color: #DEF3FF;
+    padding: 40px;
+    border-bottom: 2px solid #43BCF5;
+    border-top: 2px solid #43BCF5;
+    }
+.top-header h3 {
+    color: #000;
+    text-align:center;
+    }    
+    
+.top-date {
+    font-size: 14px;
+    text-align:right;
+    padding: 20px;
+    color:#C3C3C3;
+    }    
+            
+h1 {
+    font-size: 65px;
+    font-weight: bold;
+    margin: 10px 0px 15px 0px;
+    font-family: 'Oleo Script', cursive;
+    }
+    
+h2 {
+    text-align:center;
+    line-height: 1.5em;
+    }    
+    
+h3 {
+    line-height: 36px;
+    }
+
+p {
+    text-align: center;
+}
+    
+.questions {
+    text-align:center;
+    
+    }
+section {
+    padding:50px 0px;
+    }
+.white-bg-color {
+    background-color:white;
+    }    
+            
+</style>
+
+<!-- script for giphy randomizer -->
+<script>
+var imgArray = ['http://www.giphy.com/embed/Cj3Ce7e8h2EKY', 'http://www.giphy.com/embed/j1p4UuEzKBgPe', 'http://www.giphy.com/embed/Wrv5v6egIh7Ww', 'http://www.giphy.com/embed/Vxj7Adj24HmEg', 'http://www.giphy.com/embed/RbqfaZkoNh7EI', 'http://www.giphy.com/embed/wZjlCH43M3M0U', 'http://www.giphy.com/embed/Y5RpDgnD0iKVG', 'http://www.giphy.com/embed/bLCwC4sac7iH6', 'http://www.giphy.com/embed/a9imQoghMq5IQ', 'http://www.giphy.com/embed/7rj2ZgttvgomY', 'http://www.giphy.com/embed/10xZU9b7JBx14s', 'http://www.giphy.com/embed/MC9lNbEWeuQBa', 'http://www.giphy.com/embed/PDNrFEx1JUoLe', 'http://www.giphy.com/embed/VqFhKBifawzIc', 'http://www.giphy.com/embed/ObfxaAyZgFyN2', 'http://www.giphy.com/embed/p3WlyWHDyDeJq', 'http://www.giphy.com/embed/M48ICHnKDlEWc','http://www.giphy.com/embed/3tzCu8tIfT9Re','http://www.giphy.com/embed/AxVvk4BBS2a0Veyncc','http://www.giphy.com/embed/AHNWcxurZhMCA','http://www.giphy.com/embed/gpXfKa9xLAR56','http://www.giphy.com/embed/NnGGHE0muVqpO'];
+
+$(document).ready(function() {
+        $('iframe#new-image').attr('src', imgArray[Math.floor(Math.random() * imgArray.length)]);
+    });
+
+</script>
+</head>
+    
+<body>
+<!-- django content block {{content}}-->
+    <div class="black-top">
+        <p class="logo">Member Subscriptions Goal Track</p>
+        <p class="top-date">Today<!--django template tag to auto fill the date: {% now "l, F j, Y" %}--></p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="content">
+            <h1 class="animated bounceInDown">Congrats Fools!</h1>
+            <div>
+                <p><iframe id="new-image" class="giphy-embed" style="max-width: 100%;" src="http://www.giphy.com/embed/Wrv5v6egIh7Ww" width="480" height="275" frameborder="0" allowfullscreen=""></iframe></p>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="top-header">
+        <div class="container-fluid">
+            <section>
+                <h2>We just welcomed <span id="goalathon"><strong>###</strong></span> new Fool members today! <br />Rockin' out our daily goal of <span id="goalathon_goals"><strong>###</strong></span> new members!</h2>
+                <p>Our work doesn't stop here, lets make sure these folks are <br />getting an awesome Foolish welcome and experience!</p>
+                </section>
+        </div>
+    </div>
+</body>
+    
+</html>
