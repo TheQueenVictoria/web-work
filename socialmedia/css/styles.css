@@ -1,0 +1,42 @@
+.intro, section{
+	padding: 120px 20%;
+	
+}
+.discover{
+	background-color:#E6E6E6;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-default {
+    background-color: #000000;
+    border-color: #000000;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-brand {
+    color: #BDBDBD;
+}
+
+.navbar-default:hover .navbar-brand:hover{
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #BDBDBD;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FFFFFF;
+}
+
+section h1 {
+	text-transform: uppercase;
+}
+
+section h3 {
+	font-family: georgia, serif;
+	font-weight: bold
+}
