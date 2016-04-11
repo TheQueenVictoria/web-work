@@ -1,8 +1,16 @@
+.container-fluid {
+    width: 80%;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif !important;   
+}
+
 .intro, section{
-	padding: 120px 20%;
+	padding: 170px 0px;
 	
 }
-.discover{
+.discover, .engage{
 	background-color:#E6E6E6;
 }
 
@@ -32,11 +40,69 @@
     color: #FFFFFF;
 }
 
+.intro {
+ background: url("../img/header-intro.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#FFFFFF;
+  }
+
+ .intro h1 {
+    background-color: rgba(222,221,221,.8);
+    padding: 40px;
+    color: black;
+ }
+
+
+/* link state */
+:hover {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+/* sections*/
 section h1 {
 	text-transform: uppercase;
+    font-weight: bold;
 }
 
 section h3 {
 	font-family: georgia, serif;
 	font-weight: bold
+}
+
+
+/* button */
+section button {
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    background-color: #D0D0D0;
+    border: 1px solid #BBB;
+}
+
+section button:hover {
+    background-color: #FFFFFF;
+}
+
+
+
+img{
+    max-width:100%;
+}
+
+.caption {
+    font-size: .75em;
+}
+
+
+footer{
+    background-color: #808080;
+    color: #CECECE;
+    font-size: .85em;
+    padding: 50px 0px;
+    text-align: center;
 }
