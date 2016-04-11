@@ -157,7 +157,7 @@
     }
     
     .block {
-        height: 25em;
+        height: 31em;
         background-color: rgb(244, 244, 244);
     }
     @media (max-width: 1365px) {
@@ -224,7 +224,7 @@
         
     }
       .inner-option {  
-        padding: 25px;
+        padding: 0px 15px;
         }
         
     .intro {
@@ -293,4 +293,10 @@
             line-height: 1.3em;
         }
 
+    }
+
+    @media (min-width: 992px) {
+        .col-md-10 {
+            padding-left:50px;
+        }
     }
