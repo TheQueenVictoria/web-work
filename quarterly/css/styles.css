@@ -162,7 +162,7 @@
     }
     @media (max-width: 1365px) {
         .block {
-            height: 32em;
+            height: 31em;
         }
     }
     @media (max-width: 990px) {
@@ -224,7 +224,7 @@
         
     }
       .inner-option {  
-        padding: 35px 45px;
+        padding: 25px;
         }
         
     .intro {
