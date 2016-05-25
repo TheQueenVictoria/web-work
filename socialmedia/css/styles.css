@@ -106,3 +106,26 @@ footer{
     padding: 50px 0px;
     text-align: center;
 }
+
+
+@media(max-width:1160px) {
+        .container-fluid {
+        width: 75%;
+    }
+
+}
+
+@media(max-width:720px) {
+        .container-fluid {
+        width: 90%;
+    }
+
+}
+
+
+@media(max-width:480px) {
+
+    .intro, section {
+        padding: 70px 0px;
+    }
+}
